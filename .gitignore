@@ -1,0 +1,10 @@
+# Ignore generated files
+atividade-de-CSS-updated.zip
+screenshot.png
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Node (if any)
+node_modules/

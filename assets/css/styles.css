@@ -24,12 +24,16 @@ body{
   min-height: 100vh;
   box-shadow: 0 6px 16px rgba(0,0,0,.10);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-header{
   background: var(--purple-900);
   color:#fff;
-  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   padding: 12px 10px;
   font-weight: 700;
   font-size: 12px;
@@ -47,6 +51,11 @@ body{
   padding-right: 28px;
   padding-bottom: clamp(22px, 4.5vh, 34px);
   padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  flex: 1 0 auto;
 }
 
 .heading{
@@ -92,6 +101,7 @@ body{
   justify-content: center;
   gap: 26px;
   padding: 6px 0 6px;
+  flex-wrap: wrap;
 }
 
 .member{
@@ -99,6 +109,10 @@ body{
   text-align: center;
   padding: 4px 2px;
   border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .avatar{
@@ -125,7 +139,9 @@ body{
 .site-footer{
   background: var(--purple-900);
   color:#fff;
-  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   padding: 11px 8px;
   font-size: 11px;
 }
