@@ -52,6 +52,34 @@
           </article>
         </div>
       </section>
+
+      <section class="checker" aria-labelledby="checker-title">
+        <div class="checker__header">
+          <h2 id="checker-title" class="subheading">Verificador de amigo</h2>
+          <p class="checker__hint">Informe ID, @username ou encaminhe uma mensagem</p>
+        </div>
+
+        <form id="friend-form" class="checker__form">
+          <label class="checker__field">
+            <span>ID do amigo</span>
+            <input type="text" name="friendId" placeholder="Ex.: 673638791" />
+          </label>
+
+          <label class="checker__field">
+            <span>Username</span>
+            <input type="text" name="friendUsername" placeholder="Ex.: @Oper4listeles" />
+          </label>
+
+          <label class="checker__field">
+            <span>Encaminhamento</span>
+            <textarea name="forwardedMessage" rows="3" placeholder="Cole o texto encaminhado aqui"></textarea>
+          </label>
+
+          <button type="submit" class="checker__submit glow-target" data-glow>Validar amigo</button>
+        </form>
+
+        <output id="friend-result" class="checker__result" aria-live="polite"></output>
+      </section>
     </main>
 
     <footer class="site-footer glow-target" data-glow>
